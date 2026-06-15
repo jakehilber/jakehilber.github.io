@@ -1,125 +1,201 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jake Hilber | Principal Engineer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jake Hilber | Principal Engineer</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-        }
+  https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap
 
-        header {
-            background-color: #1f2937;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+  <style>
+    * { box-sizing: border-box; }
 
-        section {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-        }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+    }
 
-        h1, h2 {
-            margin-top: 0;
-        }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
 
-        h2 {
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 5px;
-        }
+    header {
+      background: linear-gradient(135deg, #111827, #374151);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
 
-        li {
-            margin-bottom: 8px;
-        }
+    header p {
+      margin-top: 10px;
+      color: #d1d5db;
+      font-size: 1.1rem;
+    }
 
-        .emoji {
-            margin-right: 8px;
-        }
+    nav {
+      margin-top: 25px;
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #6b7280;
-        }
-    </style>
+    nav a {
+      color: #9ca3af;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    section {
+      background: white;
+      margin: 30px 0;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: 600;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef2ff;
+      color: #4338ca;
+      padding: 5px 10px;
+      margin: 5px 5px 0 0;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Jake Hilber</h1>
+  <h1>Jake Hilber</h1>
+  <p>Principal Engineer • Networking • Infrastructure • Systems Architecture</p>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#focus">Focus</a>
+    <a href="#skills">Expertise</a>
+    <a href="#interests">Interests</a>
+  </nav>
 </header>
 
-<section>
-    <p>
-        I’m a Principal Engineer from Wisconsin, USA, with a background in networking, infrastructure,
-        security, and large-scale systems design.
+<div class="container">
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="intro">
+      Principal Engineer based in Wisconsin with deep experience across networking, infrastructure, security, and large-scale system design. Background includes municipal IT, global enterprise architecture, and Cisco-focused engineering across voice, networking, and contact center platforms.
     </p>
 
-    <p>
-        I started my career supporting municipal IT systems (police, fire, and city services), earned my CCNA during high school,
-        and completed my degree at the University of Wisconsin–Stout. Since then, I’ve worked primarily as a Cisco-focused
-        network, voice, and contact center engineer/architect.
+    <p class="intro">
+      Eight years of experience across the Asia-Pacific region supporting distributed systems, global teams, and high-availability environments. Currently evolving toward principal architecture, software-adjacent engineering, and data-driven systems.
     </p>
+  </section>
 
-    <p>
-        Over the past 8 years, I’ve lived and worked across the Asia-Pacific region, supporting global operations
-        and modern distributed systems.
-    </p>
-</section>
+  <section id="focus">
+    <h2>Current Focus</h2>
+    <div class="grid">
+      <div>
+        <h4>Systems Integration</h4>
+        <p>Building deeper expertise in data-driven system design and integration layers.</p>
+      </div>
+      <div>
+        <h4>Infra + Software</h4>
+        <p>Bridging infrastructure engineering with software development practices.</p>
+      </div>
+      <div>
+        <h4>AI Workflows</h4>
+        <p>Exploring AI-assisted engineering and productivity workflows.</p>
+      </div>
+      <div>
+        <h4>Hands-on Builds</h4>
+        <p>Developing practical projects and expanding GitHub presence.</p>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>🧠 About Me</h2>
+  <section id="skills">
+    <h2>Expertise</h2>
+
+    <div>
+      <span class="tag">Networking</span>
+      <span class="tag">Cisco</span>
+      <span class="tag">Security</span>
+      <span class="tag">Infrastructure</span>
+      <span class="tag">Data Centers</span>
+      <span class="tag">Voice & Contact Center</span>
+      <span class="tag">Distributed Systems</span>
+      <span class="tag">Global Operations</span>
+    </div>
+
     <ul>
-        <li>🤝 On <strong>Team Human, working with AI</strong></li>
-        <li>🌐 Experience across infrastructure, networking, security, and data centers</li>
-        <li>📈 Growing into a <strong>technology strategist / principal architect</strong></li>
-        <li>💻 Expanding into <strong>software and development-oriented engineering</strong></li>
-        <li>📊 Currently learning <strong>data science and analytics</strong></li>
-        <li>🌏 Global experience across U.S. and APAC</li>
-        <li>⚖️ Experience supporting legal and technical depositions</li>
+      <li>Experience supporting legal and technical depositions</li>
+      <li>Global engineering experience across US and APAC</li>
+      <li>Growing into technology strategy and principal architecture</li>
+      <li>Expanding into development-oriented engineering</li>
     </ul>
-</section>
+  </section>
 
-<section>
-    <h2>🚀 Current Focus</h2>
+  <section id="interests">
+    <h2>Interests</h2>
     <ul>
-        <li>Building deeper expertise in <strong>data + systems integration</strong></li>
-        <li>Bridging <strong>infrastructure and software engineering</strong></li>
-        <li>Exploring <strong>AI-assisted engineering workflows</strong></li>
-        <li>Developing more hands-on projects here on GitHub</li>
+      <li>Nature, camping, and travel</li>
+      <li>Food and cultural exploration</li>
+      <li>Badminton</li>
+      <li>Quantum mechanics, cryptography, and Vietnamese language</li>
     </ul>
-</section>
+  </section>
 
-<section>
-    <h2>🎯 Interests</h2>
-    <ul>
-        <li>Nature, camping, and travel</li>
-        <li>Food and culture</li>
-        <li>Badminton</li>
-        <li>Exploring <strong>quantum mechanics</strong>, <strong>cryptography</strong>, and <strong>Vietnamese language</strong></li>
-    </ul>
-</section>
+</div>
 
 <footer>
-    <p>© 2026 Jake Hilber</p>
+  © 2026 Jake Hilber
 </footer>
 
 </body>
 </html>
-``
