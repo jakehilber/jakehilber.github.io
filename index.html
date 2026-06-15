@@ -36,14 +36,25 @@
       margin: 0;
     }
 
-    header p {
-      margin-top: 10px;
-      color: #d1d5db;
-      font-size: 1.1rem;
+    .role {
+      margin-top: 18px;
     }
 
+    .pill {
+      display: inline-block;
+      padding: 6px 12px;
+      margin: 6px 6px 0 0;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: #e5e7eb;
+      backdrop-filter: blur(6px);
+    }
+
+
     nav {
-      margin-top: 25px;
+      margin-top: 28px;
     }
 
     nav a {
@@ -114,7 +125,14 @@
 
 <header>
   <h1>Jake Hilber</h1>
-  <p>Principal Engineer • Networking • Infrastructure • Systems Architecture</p>
+
+  <div class="role">
+    <span class="pill">Principal Engineer</span>
+    <span class="pill">Networking</span>
+    <span class="pill">Infrastructure</span>
+    <span class="pill">Systems Architecture</span>
+  </div>
+
 
   <nav>
     <a href="#about">About</a>
@@ -198,4 +216,3 @@
 </footer>
 
 </body>
-</html>
