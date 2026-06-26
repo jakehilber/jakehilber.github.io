@@ -7,7 +7,7 @@ const capabilities = [
   {
     type: "infra",
     title: "Network, Voice, and Hybrid Systems",
-    body: "Cisco routing and switching, GNS3, Packet Tracer, CUCM, Webex, Jabber, SIP, CUBE, Genesys, VPN, RDP, monitoring, and cloud networking fundamentals."
+    body: "Cisco routing and switching, GNS3, Packet Tracer, CUCM, Webex, Jabber, SIP, CUBE, Genesys Cloud, VPN, RDP, monitoring, and cloud networking fundamentals."
   },
   {
     type: "data",
