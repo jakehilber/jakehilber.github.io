@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Hilber Resume</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6878;
+      --line: #dce1ea;
+      --accent: #2157a7;
+      --paper: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #eef2f7;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 28px auto;
+      padding: 46px;
+      background: var(--paper);
+      box-shadow: 0 18px 55px rgba(23, 32, 51, 0.15);
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 24px;
+      padding-bottom: 22px;
+      border-bottom: 3px solid var(--accent);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+      font-size: 2.4rem;
+      letter-spacing: 0;
+    }
+
+    .title {
+      margin-bottom: 0;
+      color: var(--accent);
+      font-size: 1.06rem;
+      font-weight: 700;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: right;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px 0 0;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: var(--accent);
+      font-size: 0.86rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .summary {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 24px;
+    }
+
+    .item {
+      break-inside: avoid;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .item p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 19px;
+    }
+
+    li {
+      margin-bottom: 5px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skill-list li {
+      margin: 0;
+      padding: 6px 9px;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #f7f9fc;
+      font-size: 0.88rem;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .print-action {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      min-height: 42px;
+      padding: 10px 14px;
+      color: #fff;
+      border: 0;
+      border-radius: 8px;
+      background: var(--accent);
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: 0 10px 28px rgba(33, 87, 167, 0.28);
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        max-width: none;
+        margin: 0;
+        padding: 0.45in;
+        box-shadow: none;
+      }
+
+      .print-action {
+        display: none;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        margin: 0;
+        padding: 28px 20px;
+      }
+
+      header,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="print-action" type="button" onclick="window.print()">Print / Save PDF</button>
+  <main class="page">
+    <header>
+      <div>
+        <h1>Jake Hilber</h1>
+        <p class="title">Principal Engineer / Principal Architect</p>
+      </div>
+      <div class="contact">
+        <div>Wisconsin, USA</div>
+        <div>APAC experience</div>
+        <div><a href="https://www.linkedin.com/in/jakehilber/">linkedin.com/in/jakehilber</a></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Principal engineer and architecture-minded technologist with a background across networking,
+        infrastructure, voice/contact center systems, security, data integration, and large-scale troubleshooting.
+        Experienced with Cisco-focused network, voice, and contact center environments, global/APAC operations,
+        and the practical bridge between systems operations, architecture, automation, analytics, and identity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Core Strengths</h2>
+      <div class="grid">
+        <div class="item">
+          <h3>Network, Voice, and Contact Center</h3>
+          <p>Cisco routing/switching, CUCM, Webex, Jabber, SIP, CUBE, Genesys on-prem and cloud concepts, packet capture, logs, and routing strategy.</p>
+        </div>
+        <div class="item">
+          <h3>Infrastructure and Hybrid Systems</h3>
+          <p>Windows, Linux, VMware/ESXi, vSwitches, data center hardware, VPN, remote access, cloud networking fundamentals, and service delivery operations.</p>
+        </div>
+        <div class="item">
+          <h3>Data and Integration</h3>
+          <p>SQL Server, PostgreSQL, DBeaver, SQuirreL SQL, Python, pandas, Jupyter, REST/JSON, GraphQL, API testing, reporting, and analytics.</p>
+        </div>
+        <div class="item">
+          <h3>Security, Identity, and Standards</h3>
+          <p>MFA, SSO, SAML, OAuth/OIDC, RBAC, PKI, TLS, Zero Trust concepts, NIST, CIS, ISO/IEC, SANS, IEEE, and governance-aware engineering.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Selected Technical Toolkit</h2>
+      <ul class="skill-list">
+        <li>Wireshark</li>
+        <li>Postman</li>
+        <li>GitHub</li>
+        <li>GNS3</li>
+        <li>Cisco Packet Tracer</li>
+        <li>SolarWinds</li>
+        <li>PRTG</li>
+        <li>Nagios</li>
+        <li>RTMT</li>
+        <li>SQL Server Management Studio</li>
+        <li>PostgreSQL</li>
+        <li>DBeaver</li>
+        <li>Python</li>
+        <li>pandas</li>
+        <li>Jupyter</li>
+        <li>Power BI</li>
+        <li>Tableau</li>
+        <li>Terraform</li>
+        <li>Ansible</li>
+        <li>Docker</li>
+        <li>Kubernetes fundamentals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Architecture Capability Model</h2>
+      <ul>
+        <li>Designs for high availability, redundancy, scalability, resiliency, performance, and cost awareness.</li>
+        <li>Connects infrastructure, voice, cloud, security, data, observability, and automation into coherent operating models.</li>
+        <li>Uses root cause analysis, log review, packet analysis, and protocol knowledge to turn incidents into design improvements.</li>
+        <li>Builds toward API-driven integrations, event-driven architecture awareness, and AI-assisted engineering workflows.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Career Foundation</h2>
+      <ul>
+        <li>Started in municipal IT supporting police, fire, and city service systems.</li>
+        <li>Earned CCNA during high school and completed a degree at University of Wisconsin-Stout.</li>
+        <li>Worked primarily as a Cisco-focused network, voice, and contact center engineer/architect.</li>
+        <li>Lived and worked across Asia-Pacific for approximately eight years supporting distributed operations.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Current Growth Areas</h2>
+      <p class="note">
+        Data science and analytics, Anaconda/Jupyter workflows, API development, Git-based project work,
+        Genesys Developer, NIST/CIS/ISO/ISACA/ISC2 learning paths, and AI-assisted engineering practices.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
