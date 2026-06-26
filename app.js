@@ -32,7 +32,7 @@ const capabilities = [
   {
     type: "infra",
     title: "Protocol Fluency",
-    body: "IPv4, IPv6, DNS, NTP, SMTP, HTTP, HTTPS, TLS handshake basics, EIGRP, OSPF, BGP, QoS, SIP, SBC, packet capture, and log analysis."
+    body: "IPv4, IPv6, DNS, NTP, SMTP, HTTP(S), TLS handshake basics, EIGRP, OSPF, BGP, QoS, SIP, SBC, packet capture, and log analysis."
   },
   {
     type: "ops",
@@ -51,7 +51,7 @@ const tools = [
   "PuTTY", "SSH", "SSH key management", "Browser Dev Tools", "VPN", "RDP", "AnyDesk",
   "Password manager", "MFA", "SAML", "SSO", "OAuth", "OIDC", "GNS3", "Cisco Packet Tracer",
   "SolarWinds", "PRTG", "Nagios", "Webex", "Jabber", "CUCM", "RTMT", "SIP", "CUBE",
-  "Asterisk PBX", "Genesys URS", "SQL Server Management Studio", "PostgreSQL", "SQuirreL SQL",
+  "Asterisk PBX", "SQL Server Management Studio", "PostgreSQL", "SQuirreL SQL",
   "DBeaver", "Python", "pandas", "Jupyter Notebook", "Power BI", "Tableau", "REST", "JSON",
   "GraphQL", "Kafka", "RabbitMQ", "Splunk", "Sentinel", "Prometheus", "Grafana", "ELK",
   "OpenTelemetry", "AppDynamics", "Dynatrace", "GitHub Actions", "Azure DevOps", "Jenkins",
