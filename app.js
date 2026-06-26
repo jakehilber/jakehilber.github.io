@@ -42,7 +42,7 @@ const capabilities = [
   {
     type: "security",
     title: "Standards Awareness",
-    body: "IEEE, SANS, NIST, CIS, ISO/IEC, ISACA, ISC2, CISA, Cisco ecosystem, Genesys ecosystem, and governance-aligned technical judgment."
+    body: "IEEE, SANS, NIST, CIS, ISO/IEC, ISACA, ISC2, CISA, Cisco ecosystem, Genesys Cloud, and governance-aligned technical judgment."
   }
 ];
 
