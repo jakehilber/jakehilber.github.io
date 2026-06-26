@@ -1,313 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jake Hilber | Principal Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #f3f4f6;
-      color: #1f2937;
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
-    .site {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 0 3rem;
-    }
-
-    /* Hero */
-    .hero {
-      background: #111827;
-      color: white;
-      padding: 4rem 2rem 3rem;
-      text-align: center;
-      border-radius: 0 0 16px 16px;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero h1 {
-      font-size: 2.6rem;
-      font-weight: 500;
-      letter-spacing: -0.5px;
-      color: #f9fafb;
-    }
-
-    .hero-sub {
-      font-size: 0.95rem;
-      color: #9ca3af;
-      margin-top: 0.5rem;
-    }
-
-    .pills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 8px;
-      margin-top: 1.5rem;
-    }
-
-    .pill {
-      padding: 5px 14px;
-      border: 0.5px solid rgba(255,255,255,0.2);
-      border-radius: 999px;
-      font-size: 0.82rem;
-      color: #d1d5db;
-    }
-
-    .hero-nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 6px 20px;
-      margin-top: 2rem;
-    }
-
-    .hero-nav a {
-      color: #6b7280;
-      font-size: 0.88rem;
-      text-decoration: none;
-    }
-
-    .hero-nav a:hover { color: #f9fafb; }
-
-    .hero-nav .linkedin {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 5px 14px;
-      border: 0.5px solid rgba(255,255,255,0.2);
-      border-radius: 999px;
-      color: #9ca3af;
-      font-size: 0.82rem;
-      text-decoration: none;
-    }
-
-    .hero-nav .linkedin:hover {
-      color: white;
-      border-color: rgba(255,255,255,0.4);
-    }
-
-    /* Cards */
-    .card {
-      background: #ffffff;
-      border: 0.5px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 2rem;
-      margin: 0 1rem 1.25rem;
-    }
-
-    .card h2 {
-      font-size: 0.72rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #6b7280;
-      margin-bottom: 1.25rem;
-    }
-
-    /* Intro */
-    .intro-text {
-      font-size: 0.95rem;
-      line-height: 1.75;
-      color: #1f2937;
-    }
-
-    .intro-text + .intro-text { margin-top: 0.85rem; }
-
-    /* Bullet list */
-    .bullet-list { list-style: none; }
-
-    .bullet-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 8px 0;
-      border-bottom: 0.5px solid #f3f4f6;
-      font-size: 0.9rem;
-      line-height: 1.5;
-      color: #1f2937;
-    }
-
-    .bullet-list li:last-child { border-bottom: none; }
-
-    .bullet-list li i {
-      font-size: 17px;
-      color: #9ca3af;
-      margin-top: 1px;
-      flex-shrink: 0;
-    }
-
-    .bullet-list li strong { font-weight: 500; }
-
-    /* Focus grid */
-    .focus-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-
-    .focus-item {
-      background: #f9fafb;
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-    }
-
-    .focus-item i {
-      font-size: 20px;
-      color: #9ca3af;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .focus-item p {
-      font-size: 0.86rem;
-      color: #6b7280;
-      line-height: 1.5;
-    }
-
-    .focus-item strong { font-weight: 500; color: #1f2937; }
-
-    /* Interests grid */
-    .interests-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-    }
-
-    .interest {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 12px;
-      background: #f9fafb;
-      border-radius: 8px;
-      font-size: 0.88rem;
-      color: #1f2937;
-    }
-
-    .interest i {
-      font-size: 18px;
-      color: #9ca3af;
-      flex-shrink: 0;
-    }
-
-    .interest strong { font-weight: 500; }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem 0;
-      color: #9ca3af;
-      font-size: 0.82rem;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 1.9rem; }
-      .focus-grid { grid-template-columns: 1fr; }
-      .interests-grid { grid-template-columns: 1fr; }
-      .card { margin: 0 0.5rem 1rem; padding: 1.5rem; }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Hilber | Principal Architect Test Site</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="site">
-
-  <header class="hero">
-    <h1>Jake Hilber</h1>
-    <p class="hero-sub">Principal Engineer · Wisconsin, USA · 8 years APAC</p>
-    <div class="pills">
-      <span class="pill">Principal Engineer</span>
-      <span class="pill">Networking</span>
-      <span class="pill">Infrastructure</span>
-      <span class="pill">Systems Architecture</span>
-    </div>
-    <nav class="hero-nav">
-      <a href="#about">About</a>
-      <a href="#focus">Focus</a>
-      <a href="#interests">Interests</a>
-      <a href="https://www.linkedin.com/in/jakehilber/" class="linkedin" target="_blank" rel="noopener">
-        <i class="ti ti-brand-linkedin" aria-hidden="true"></i> LinkedIn
-      </a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Jake Hilber home">
+      <span class="brand-mark">JH</span>
+      <span>Jake Hilber</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#tooling">Tooling</a>
+      <a href="#timeline">Path</a>
+      <a href="../Jake_Hilber_Resume.html">Resume</a>
     </nav>
   </header>
 
-  <div class="card">
-    <h2>Introduction</h2>
-    <p class="intro-text">I'm a Principal Engineer from Wisconsin, USA, with a background in networking, infrastructure, security, and large-scale systems design.</p>
-    <p class="intro-text">I started my career supporting municipal IT systems — police, fire, and city services — earned my CCNA during high school, and completed my degree at the University of Wisconsin–Stout. Since then, I've worked primarily as a Cisco-focused network, voice, and contact center engineer and architect.</p>
-    <p class="intro-text">Over the past 8 years, I've lived and worked across the Asia-Pacific region, supporting global operations and modern distributed systems.</p>
-  </div>
-
-  <div class="card" id="about">
-    <h2>About me</h2>
-    <ul class="bullet-list">
-      <li><i class="ti ti-users" aria-hidden="true"></i>On <strong>Team Human, working with AI</strong></li>
-      <li><i class="ti ti-server" aria-hidden="true"></i>Experience across infrastructure, networking, security, and data centers</li>
-      <li><i class="ti ti-trending-up" aria-hidden="true"></i>Growing into a <strong>technology strategist / principal architect</strong></li>
-      <li><i class="ti ti-terminal-2" aria-hidden="true"></i>Expanding into <strong>software and development-oriented engineering</strong></li>
-      <li><i class="ti ti-chart-bar" aria-hidden="true"></i>Currently learning <strong>data science and analytics</strong></li>
-      <li><i class="ti ti-world" aria-hidden="true"></i>Global experience across U.S. and APAC</li>
-      <li><i class="ti ti-gavel" aria-hidden="true"></i>Experience supporting legal and technical depositions</li>
-    </ul>
-  </div>
-
-  <div class="card" id="focus">
-    <h2>Current focus</h2>
-    <div class="focus-grid">
-      <div class="focus-item">
-        <i class="ti ti-topology-star" aria-hidden="true"></i>
-        <p>Building deeper expertise in <strong>data + systems integration</strong></p>
+  <main id="top">
+    <section class="hero">
+      <canvas id="networkCanvas" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <p class="eyebrow">Principal Engineer / Architect</p>
+        <h1>Infrastructure, contact center, data, and security strategy for complex systems.</h1>
+        <p class="hero-text">
+          Wisconsin-born engineer with global APAC experience across Cisco voice, Genesys, networking,
+          systems troubleshooting, and the architecture layer where operations, data, identity, and automation meet.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#capabilities">Explore capabilities</a>
+          <a class="button secondary" href="../Jake_Hilber_Resume.html">Open resume</a>
+          <a class="button secondary" href="../Jake_Hilber_Resume.pdf">PDF resume</a>
+        </div>
       </div>
-      <div class="focus-item">
-        <i class="ti ti-code" aria-hidden="true"></i>
-        <p>Bridging <strong>infrastructure and software engineering</strong></p>
+      <aside class="signal-panel" aria-label="Profile signals">
+        <div>
+          <span class="metric">8 yrs</span>
+          <span class="label">APAC experience</span>
+        </div>
+        <div>
+          <span class="metric">Cisco</span>
+          <span class="label">Voice + contact center</span>
+        </div>
+        <div>
+          <span class="metric">AI</span>
+          <span class="label">Team Human, AI-enabled</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section intro-band" aria-label="Positioning summary">
+      <div>
+        <p class="eyebrow">Working thesis</p>
+        <h2>Principal architecture is where deep troubleshooting becomes durable design.</h2>
       </div>
-      <div class="focus-item">
-        <i class="ti ti-robot" aria-hidden="true"></i>
-        <p>Exploring <strong>AI-assisted engineering workflows</strong></p>
+      <p>
+        This test site organizes Jake's notes into a practical capability model: baseline engineering tooling,
+        infrastructure, data integration, security, observability, architecture principles, DevOps, and protocol fluency.
+      </p>
+    </section>
+
+    <section class="section" id="capabilities">
+      <div class="section-heading">
+        <p class="eyebrow">Capability explorer</p>
+        <h2>Filter the operating model</h2>
       </div>
-      <div class="focus-item">
-        <i class="ti ti-brand-github" aria-hidden="true"></i>
-        <p>Developing more hands-on projects on GitHub</p>
+      <div class="filter-row" role="tablist" aria-label="Capability filters">
+        <button class="filter active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="core">Core</button>
+        <button class="filter" type="button" data-filter="infra">Infrastructure</button>
+        <button class="filter" type="button" data-filter="data">Data</button>
+        <button class="filter" type="button" data-filter="security">Security</button>
+        <button class="filter" type="button" data-filter="ops">Operations</button>
       </div>
-    </div>
-  </div>
+      <div class="capability-grid" id="capabilityGrid"></div>
+    </section>
 
-  <div class="card" id="interests">
-    <h2>Interests</h2>
-    <div class="interests-grid">
-      <div class="interest"><i class="ti ti-tent" aria-hidden="true"></i>Nature, camping, and travel</div>
-      <div class="interest"><i class="ti ti-mug" aria-hidden="true"></i>Food and culture</div>
-      <div class="interest"><i class="ti ti-ping-pong" aria-hidden="true"></i>Badminton</div>
-      <div class="interest"><i class="ti ti-atom" aria-hidden="true"></i><span><strong>Quantum mechanics</strong> &amp; <strong>cryptography</strong></span></div>
-      <div class="interest"><i class="ti ti-language" aria-hidden="true"></i><strong>Vietnamese language</strong></div>
-    </div>
-  </div>
+    <section class="section split" id="tooling">
+      <div>
+        <p class="eyebrow">Tooling matrix</p>
+        <h2>Hands-on tools and standards</h2>
+        <p>
+          The matrix below is intentionally pragmatic: lab tools, diagnostic tools, identity, Git,
+          API clients, database clients, and standards awareness all sit together because real incidents do too.
+        </p>
+      </div>
+      <div class="tool-console">
+        <div class="console-header">
+          <span></span><span></span><span></span>
+        </div>
+        <label for="toolSearch">Search tooling</label>
+        <input id="toolSearch" type="search" placeholder="Try SIP, Python, Wireshark, OAuth...">
+        <div class="tool-results" id="toolResults" aria-live="polite"></div>
+      </div>
+    </section>
 
-  <footer>© 2026 Jake Hilber</footer>
+    <section class="section" id="timeline">
+      <div class="section-heading">
+        <p class="eyebrow">Career direction</p>
+        <h2>From network depth to architecture breadth</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>Foundation</span>
+          <h3>Municipal IT, CCNA, and infrastructure fundamentals</h3>
+          <p>Police, fire, city services, routing, switching, servers, and practical support discipline.</p>
+        </article>
+        <article>
+          <span>Specialization</span>
+          <h3>Cisco voice, contact center, and global operations</h3>
+          <p>CUCM, Webex, Jabber, SIP, logs, packet capture, routing strategy, and APAC operations.</p>
+        </article>
+        <article>
+          <span>Expansion</span>
+          <h3>Data, APIs, AI workflows, and security architecture</h3>
+          <p>Python, pandas, Jupyter, SQL, REST, GraphQL, identity, observability, automation, and governance.</p>
+        </article>
+      </div>
+    </section>
+  </main>
 
-</div>
+  <footer class="footer">
+    <span>Jake Hilber</span>
+    <a href="https://www.linkedin.com/in/jakehilber/">LinkedIn</a>
+    <a href="../Jake_Hilber_Resume.html">Resume</a>
+    <a href="../Jake_Hilber_Resume.pdf">PDF</a>
+  </footer>
 
-<script>
-  console.log("%cHey there 👋", "font-size:16px; font-weight:bold;");
-  console.log("%cReach out: https://www.linkedin.com/in/jakehilber/", "color:#0ea5e9;");
-  console.log("%c16June2026--need to learn---> https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf", "color:#0ea5e9;");
-  console.log("student of psychology", "color:#0ea5e9;");
-  console.log("data pipeline workflow", "color:#0ea5e9;");
-  
-</script>
-
+  <script src="app.js"></script>
 </body>
 </html>
