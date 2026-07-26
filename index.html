@@ -1,144 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jake Hilber | Principal Architect Test Site</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#top" aria-label="Jake Hilber home">
-      <span class="brand-mark">JH</span>
-      <span>Jake Hilber</span>
-    </a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#capabilities">Capabilities</a>
-      <a href="#tooling">Tooling</a>
-      <a href="#timeline">Path</a>
-      <a href="../Jake_Hilber_Resume.html">Resume</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Principal Engineer specializing in enterprise networking, collaboration, contact centers, and infrastructure architecture." />
+    <title>Principal Engineer | Enterprise Infrastructure &amp; Collaboration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Home">PE<span>·</span>01</a>
+      <nav aria-label="Main navigation">
+        <a href="#expertise">Expertise</a>
+        <a href="#focus">Focus</a>
+        <a href="#approach">Approach</a>
+      </nav>
+      <!-- Replace the # link below with your public GitHub profile URL. -->
+      <a class="github-link" href="#" aria-label="GitHub profile">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
 
-  <main id="top">
-    <section class="hero">
-      <canvas id="networkCanvas" aria-hidden="true"></canvas>
-      <div class="hero-copy">
-        <p class="eyebrow">Principal Engineer / Architect</p>
-        <h1>Infrastructure, contact center, data, and security strategy for complex systems.</h1>
-        <p class="hero-text">
-          Wisconsin-born engineer with global APAC experience across Cisco voice, Genesys, networking,
-          systems troubleshooting, and the architecture layer where operations, data, identity, and automation meet.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#capabilities">Explore capabilities</a>
-          <a class="button secondary" href="../Jake_Hilber_Resume.html">Open resume</a>
-          <a class="button secondary" href="../Jake_Hilber_Resume.pdf">PDF resume</a>
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow"><span></span> Principal Engineer · Asia-Pacific</div>
+        <h1 id="hero-title">Build systems<br />that <em>hold up.</em></h1>
+        <div class="hero-bottom">
+          <p class="intro">Nearly two decades designing, implementing, and supporting enterprise infrastructure for organizations where reliability is non-negotiable.</p>
+          <a class="scroll-cue" href="#expertise">Explore expertise <span>↓</span></a>
         </div>
-      </div>
-      <aside class="signal-panel" aria-label="Profile signals">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="node node-one"></div><div class="node node-two"></div><div class="node node-three"></div>
+      </section>
+
+      <section class="statement" aria-label="Professional summary">
+        <p class="section-label">01 / The work</p>
         <div>
-          <span class="metric">8 yrs</span>
-          <span class="label">APAC experience</span>
+          <h2>Architecture meets the real world.</h2>
+          <p>I work at the intersection of networking, unified communications, contact centers, infrastructure, and operations—equally comfortable shaping strategy and tracing the packet that explains the outage.</p>
+          <p>My career began supporting municipal IT systems for police, fire, and city services. Today, I support global organizations and distributed engineering teams throughout North America and Asia-Pacific.</p>
         </div>
-        <div>
-          <span class="metric">Cisco</span>
-          <span class="label">Voice + contact center</span>
+      </section>
+
+      <section class="expertise" id="expertise" aria-labelledby="expertise-title">
+        <div class="section-head">
+          <p class="section-label">02 / Core expertise</p>
+          <h2 id="expertise-title">Deep technical range.<br />One operational mindset.</h2>
         </div>
-        <div>
-          <span class="metric">AI</span>
-          <span class="label">Team Human, AI-enabled</span>
+        <div class="cards">
+          <article class="card"><span class="card-number">01</span><h3>Enterprise<br />Infrastructure</h3><p>Architecture · Data Centers · High Availability · Disaster Recovery · Systems Integration · Root Cause Analysis</p></article>
+          <article class="card"><span class="card-number">02</span><h3>Networking<br />&amp; Security</h3><p>Cisco Enterprise · IPv4 / IPv6 · OSPF · BGP · QoS · VPN · PKI · Identity &amp; Access Management</p></article>
+          <article class="card"><span class="card-number">03</span><h3>Collaboration<br />&amp; Voice</h3><p>CUCM · CUBE · Webex · SIP · VoIP · RTMT · Asterisk · SIP Trace Analysis</p></article>
+          <article class="card"><span class="card-number">04</span><h3>Contact<br />Center</h3><p>Genesys Cloud CX · Genesys Engage · IVR Architecture · URS · Routing Strategy · Analytics</p></article>
         </div>
-      </aside>
-    </section>
+      </section>
 
-    <section class="section intro-band" aria-label="Positioning summary">
-      <div>
-        <p class="eyebrow">Working thesis</p>
-        <h2>Principal architecture is where deep troubleshooting becomes durable design.</h2>
-      </div>
-      <p>
-        This test site organizes Jake's notes into a practical capability model: baseline engineering tooling,
-        infrastructure, data integration, security, observability, architecture principles, DevOps, and protocol fluency.
-      </p>
-    </section>
-
-    <section class="section" id="capabilities">
-      <div class="section-heading">
-        <p class="eyebrow">Capability explorer</p>
-        <h2>Filter the operating model</h2>
-      </div>
-      <div class="filter-row" role="tablist" aria-label="Capability filters">
-        <button class="filter active" type="button" data-filter="all">All</button>
-        <button class="filter" type="button" data-filter="core">Core</button>
-        <button class="filter" type="button" data-filter="infra">Infrastructure</button>
-        <button class="filter" type="button" data-filter="data">Data</button>
-        <button class="filter" type="button" data-filter="security">Security</button>
-        <button class="filter" type="button" data-filter="ops">Operations</button>
-      </div>
-      <div class="capability-grid" id="capabilityGrid"></div>
-    </section>
-
-    <section class="section split" id="tooling">
-      <div>
-        <p class="eyebrow">Tooling matrix</p>
-        <h2>Hands-on tools and standards</h2>
-        <p>
-          The matrix below is intentionally pragmatic: lab tools, diagnostic tools, identity, Git,
-          API clients, database clients, and standards awareness all sit together because real incidents do too.
-        </p>
-      </div>
-      <div class="tool-console">
-        <div class="console-header">
-          <span></span><span></span><span></span>
+      <section class="systems" id="focus" aria-labelledby="systems-title">
+        <div class="system-art" aria-hidden="true"><div class="grid"></div><span class="pulse p1"></span><span class="pulse p2"></span><span class="pulse p3"></span><span class="line l1"></span><span class="line l2"></span><span class="line l3"></span></div>
+        <div class="systems-copy">
+          <p class="section-label">03 / Current focus</p>
+          <h2 id="systems-title">Extending the stack.</h2>
+          <p>Bringing software engineering, automation, data, and AI-assisted workflows into the infrastructure discipline.</p>
+          <ul>
+            <li><span>01</span> AI-assisted engineering workflows</li>
+            <li><span>02</span> Infrastructure automation &amp; API development</li>
+            <li><span>03</span> Data science, analytics &amp; visualization</li>
+            <li><span>04</span> Cloud-native systems integration</li>
+          </ul>
         </div>
-        <label for="toolSearch">Search tooling</label>
-        <input id="toolSearch" type="search" placeholder="Try SIP, Python, Wireshark, OAuth...">
-        <div class="tool-results" id="toolResults" aria-live="polite"></div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="timeline">
-      <div class="section-heading">
-        <p class="eyebrow">Career direction</p>
-        <h2>From network depth to architecture breadth</h2>
-      </div>
-      <div class="timeline">
-        <article>
-          <span>Foundation</span>
-          <h3>Municipal IT, CCNA, and infrastructure fundamentals</h3>
-          <p>Police, fire, city services, routing, switching, servers, and practical support discipline.</p>
-        </article>
-        <article>
-          <span>Specialization</span>
-          <h3>Cisco voice, contact center, and global operations</h3>
-          <p>CUCM, Webex, Jabber, SIP, logs, packet capture, routing strategy, and APAC operations.</p>
-        </article>
-        <article>
-          <span>Expansion</span>
-          <h3>Data, APIs, AI workflows, and security architecture</h3>
-          <p>Python, pandas, Jupyter, SQL, REST, GraphQL, identity, observability, automation, and governance.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+      <section class="toolkit" aria-labelledby="toolkit-title">
+        <p class="section-label">04 / Selected toolkit</p>
+        <h2 id="toolkit-title">Tools are only useful<br />when they clarify the problem.</h2>
+        <div class="tags" aria-label="Technical skills">
+          <span>Python</span><span>SQL</span><span>REST APIs</span><span>GraphQL</span><span>Git</span><span>Wireshark</span><span>VMware ESXi</span><span>Linux</span><span>PostgreSQL</span><span>Power BI</span><span>Jupyter</span><span>Postman</span><span>GitHub Copilot</span><span>PKI</span>
+        </div>
+      </section>
 
-  <footer class="footer">
-    <span>Jake Hilber</span>
-    <a href="https://www.linkedin.com/in/jakehilber/">LinkedIn</a>
-    <a href="../Jake_Hilber_Resume.html">Resume</a>
-    <a href="../Jake_Hilber_Resume.pdf">PDF</a>
-  </footer>
+      <section class="approach" id="approach" aria-labelledby="approach-title">
+        <p class="section-label">05 / Operating principle</p>
+        <blockquote id="approach-title">“Use AI as a multiplier.<br /><em>Keep human judgment</em><br />at the center.”</blockquote>
+        <p class="approach-note">A collaborative engineer who values clear thinking, strong documentation, and systems that are built to be understood—not merely deployed.</p>
+      </section>
+    </main>
 
-  <script src="app.js"></script>
-
-<script>
-  console.log("%cHey there 👋", "font-size:16px; font-weight:bold;");
-  console.log("%cReach out: https://www.linkedin.com/in/jakehilber/", "color:#0ea5e9;");
-  console.log("##-16June2026--need to learn---> https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf", "color:#0ea5e9;");
-  
-</script>
-  
-  
-</body>
+    <footer>
+      <div><span class="footer-mark">PE<span>·</span>01</span><p>Enterprise infrastructure, thoughtfully engineered.</p></div>
+      <p>© <span id="year"></span> · Built for the open web.</p>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
 </html>
